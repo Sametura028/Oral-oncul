@@ -5,16 +5,31 @@
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="no-scroll">
     <header>
         <nav class="normal">
             <div class="mycontainer">
@@ -126,25 +141,335 @@
     </section>
 
     <article class="doctor">
-      <img src="images/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png" alt="" class="lake">
-<div class="row">
-    <div class="col-4"></div>
-    <div class="col-4"><img src="images/pngegg (2).png" width="100%" height="100%" style="object-fit: scale-down;"></div>
-    <div class="col-4"></div>
+        <!-- <img src="images/Group 1.png" alt="" class="lake"> -->
+        <div class="row row1">
+            <div class="col-4 ballcol">
+                <div class="rounded-circle ball purple lball">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+                <div class="rounded-circle ball darkblue">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+                <div class="rounded-circle ball lightblue lball end">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+            </div>
+            <div class="col-4 doctorimg"><img src="images/pngegg (2).png" width="100%" height="100%"
+                    style="object-fit: scale-down;"></div>
+            <div class="col-4 ballcol">
+                <div class="rounded-circle ball yellow rball">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+                <div class="rounded-circle ball green">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+                <div class="rounded-circle ball lila rball end">
+                    <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
+                </div>
+            </div>
 
-</div>
+        </div>
+        <div class="bluearea">
+            <div class="bigrow">
+                <div class="values row">
+                    <div class="col-6 valuecol">
+                        <div class="content">
+                            <h1>100<span class="plus">+</span></h1>
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem Ipsum, kısaca Lipsum,
+                                masaüstü tanımlanır.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 valuecol">
+                        <div class="content">
+                            <h1>500<span class="plus">+</span></h1>
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem Ipsum, kısaca Lipsum,
+                                masaüstü tanımlanır.</p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="row values">
+                    <div class="col-6 valuecol">
+                        <div class="content">
+                            <h1>70<span class="plus">+</span></h1>
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem Ipsum, kısaca Lipsum,
+                                masaüstü tanımlanır.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 valuecol">
+                        <div class="content">
+                            <h1>224<span class="plus">+</span></h1>
+                            <h4>Lorem, ipsum.</h4>
+                            <p>Lorem Ipsum, kısaca Lipsum,
+                                masaüstü tanımlanır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </article>
+    <section class="news">
+        <h1>Basından Haberler</h1>
+        <div class="slider slide container">
+            <div class="item">
+                <div class="singleimg">
+                    <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
+                    <div class="slidercontent">
+                        <small>24.04.2023</small>
+                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                            hastalar böyle tedavi ediliyor</p>
+                        <a href="" class="contiune">Devamını Oku  ></a>
+                    </div>
+                </div>
+                <div class="double">
+                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+                        </div>
+                    </div>
+                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
+                            alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="singleimg">
+                    <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
+                    <div class="slidercontent">
+                        <small>24.04.2023</small>
+                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                            hastalar böyle tedavi ediliyor</p>
+                        <a href="" class="contiune">Devamını Oku  ></a>
+                    </div>
+                </div>
+                <div class="double">
+                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
+
+                        </div>
+                    </div>
+                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
+                            alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="singleimg">
+                    <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
+                    <div class="slidercontent">
+                        <small>24.04.2023</small>
+                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                            hastalar böyle tedavi ediliyor</p>
+                        <a href="" class="contiune">Devamını Oku  ></a>
+                    </div>
+                </div>
+                <div class="double">
+                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
+
+                        </div>
+                    </div>
+                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
+                            alt="">
+                        <div class="slidercontent2">
+                            <small>24.04.2023</small>
+                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                                hastalar böyle tedavi ediliyor</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="answers">
+        <div class="filter2"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="">
+        </div>
+        <div class="container">
+            <div class="answerflex row">
+                <div class="paragraf col-md-4">
+
+                    <div>
+                        <h1>Dr.Mustafa Oral Öncül'e <br> Sorun Yanırlasın</h1>
+                    </div>
+                    <div>
+                        <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                            basın yayın sektöründe kullanılan taklit yazı bloğu
+                            olarak tanımlanır.</p>
+                    </div>
+                    <div>
+                        <button class="detail2">Detaylı Bilgi</button>
+                    </div>
+                </div>
+                <div class="col-md-4 space"></div>
+                <div class="flag col-md-4"><img src="images/pngegg (2).png" alt=""></div>
+            </div>
+        </div>
+    </article>
+    <section class="calismaalan">
+        <div class="container">
+            <h1>Çalışma Alanları</h1>
+            <div class="row mobilerow">
+                <div class="col-3">
+                    <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="col-3">
+                    <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="quotes"> <img src="images/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png"
+            class="backimg" alt="">
+        <div class=" filter3">
+            <p class="header2">
+                <i class="fa-solid fa-quote-left quote"></i>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                basın yayın sektöründe kullanılan taklit yazı bloğu
+                olarak tanımlanır.<i class="fa-solid fa-quote-right quote"></i>
+            </p>
+        </div>
+    </article>
+    <section class="information">
+        <div class="container">
+            <div class=" header">
+                <h1>Yararlı Bilgiler</h1>
+            </div>
+            <div class="triplebox">
+                <div class="box">
+                    <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
+                            alt=""></div>
+                    <div class="boxcontent">
+                        <div class="date">
+                            <p class="text-muted">24.04.2023</p>
+                        </div>
+                        <div>
+                            <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                        </div>
+                        <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                            basın yayın sektöründe kullanılan taklit yazı bloğu
+                            olarak tanımlanır.</div>
+                        <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box1 boxdob">
+                        <div class="boximage"><img
+                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png" alt=""></div>
+                        <div class="boxcontent">
+                            <div class="date">
+                                <p class="text-muted">24.04.2023</p>
+                            </div>
+                            <div>
+                                <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                            </div>
+                            <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                                basın yayın sektöründe kullanılan taklit yazı bloğu
+                                olarak tanımlanır.</div>
+                            <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                        </div>
+                    </div>
+                    <div class="box2 boxdob">
+                        <div class="boximage"><img
+                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png" alt=""></div>
+                        <div class="boxcontent">
+                            <div class="date">
+                                <p class="text-muted">24.04.2023</p>
+                            </div>
+                            <div>
+                                <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                            </div>
+                            <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                                basın yayın sektöründe kullanılan taklit yazı bloğu
+                                olarak tanımlanır.</div>
+                            <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="res container">
+            <div class="slider resslide">
+                <div class="box">
+                    <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
+                            alt=""></div>
+                    <div class="boxcontent">
+                        <div class="date">
+                            <p class="text-muted">24.04.2023</p>
+                        </div>
+                        <div>
+                            <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                        </div>
+                        <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                            basın yayın sektöründe kullanılan taklit yazı bloğu
+                            olarak tanımlanır.</div>
+                        <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                    </div>
+                </div> <div class="box slibox">
+                    <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
+                            alt=""></div>
+                    <div class="boxcontent">
+                        <div class="date">
+                            <p class="text-muted">24.04.2023</p>
+                        </div>
+                        <div>
+                            <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                        </div>
+                        <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                            basın yayın sektöründe kullanılan taklit yazı bloğu
+                            olarak tanımlanır.</div>
+                        <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
 </body>
 
 </html>
