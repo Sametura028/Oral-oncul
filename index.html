@@ -27,9 +27,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="no-scroll">
+    <div class="inline">
+        <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+ </div>
     <header>
         <nav class="normal">
             <div class="mycontainer">
@@ -123,7 +131,7 @@
     <section class="banner">
         <div>
             <div class="filter">
-                <div class="imgtext">
+                <div class="imgtext" data-aos="fade-down">
                     <div>
                         <h1>Lorem Ipsum</h1>
                     </div>
@@ -135,46 +143,47 @@
                     <div><button class="detailbtn">Detaylı bilgi</button></div>
                 </div>
             </div>
-            <img class="landscapeimage" src="images/landscape-lake-surrounded-by-mountains.png" alt="">
-            <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+            <video class="landscapeimage" src="video/Dr. Oral Oncul Doga.mp4" loop muted autoplay alt=""></video>
+            <div class="arrow"><a href="#doctor" class="arrowlink"> <i class="fa-solid fa-angle-down"></a></i></div>
         </div>
     </section>
 
-    <article class="doctor">
-        <!-- <img src="images/Group 1.png" alt="" class="lake"> -->
+    <article class="doctor" id="doctor">
         <div class="row row1">
             <div class="col-4 ballcol">
-                <div class="rounded-circle ball purple lball">
+                <div class="rounded-circle ball purple lball" data-aos="fade-right">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
-                <div class="rounded-circle ball darkblue">
+                <div class="rounded-circle ball darkblue" data-aos="fade-right">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
-                <div class="rounded-circle ball lightblue lball end">
+                <div class="rounded-circle ball lightblue lball end" data-aos="fade-right">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
             </div>
-            <div class="col-4 doctorimg"><img src="images/pngegg (2).png" width="100%" height="100%"
+            <div class="col-4 doctorimg" data-aos="fade-up"><img src="images/pngegg (2).png" width="100%" height="100%"
                     style="object-fit: scale-down;"></div>
             <div class="col-4 ballcol">
-                <div class="rounded-circle ball yellow rball">
+                <div class="rounded-circle ball yellow rball" data-aos="fade-left">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
-                <div class="rounded-circle ball green">
+                <div class="rounded-circle ball green" data-aos="fade-left">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
-                <div class="rounded-circle ball lila rball end">
+                <div class="rounded-circle ball lila rball end" data-aos="fade-left">
                     <h2>Aldığı ödüller</h2> <button>Detaylı bilgi</button>
                 </div>
             </div>
 
         </div>
+        <img src="images/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png" alt="" class="lake">
+
         <div class="bluearea">
             <div class="bigrow">
-                <div class="values row">
+                <div class="values row" data-aos="fade-right">
                     <div class="col-6 valuecol">
                         <div class="content">
-                            <h1>100<span class="plus">+</span></h1>
+                            <h1 class="num d-inline" data-val="340">000</h1><span class="plus h1">+</span>
                             <h4>Lorem, ipsum.</h4>
                             <p>Lorem Ipsum, kısaca Lipsum,
                                 masaüstü tanımlanır.</p>
@@ -182,7 +191,7 @@
                     </div>
                     <div class="col-6 valuecol">
                         <div class="content">
-                            <h1>500<span class="plus">+</span></h1>
+                            <h1 class="num d-inline" data-val="500">000</h1><span class="plus h1">+</span>
                             <h4>Lorem, ipsum.</h4>
                             <p>Lorem Ipsum, kısaca Lipsum,
                                 masaüstü tanımlanır.</p>
@@ -190,10 +199,10 @@
                     </div>
 
                 </div>
-                <div class="row values">
+                <div class="row values " data-aos="fade-left">
                     <div class="col-6 valuecol">
                         <div class="content">
-                            <h1>70<span class="plus">+</span></h1>
+                            <h1 class="num d-inline" data-val="70">00</h1><span class="plus h1">+</span>
                             <h4>Lorem, ipsum.</h4>
                             <p>Lorem Ipsum, kısaca Lipsum,
                                 masaüstü tanımlanır.</p>
@@ -201,7 +210,7 @@
                     </div>
                     <div class="col-6 valuecol">
                         <div class="content">
-                            <h1>224<span class="plus">+</span></h1>
+                            <h1 class="num d-inline" data-val="224">000</h1><span class="plus h1">+</span>
                             <h4>Lorem, ipsum.</h4>
                             <p>Lorem Ipsum, kısaca Lipsum,
                                 masaüstü tanımlanır.</p>
@@ -215,95 +224,37 @@
         <h1>Basından Haberler</h1>
         <div class="slider slide container">
             <div class="item">
-                <div class="singleimg">
+                <div class="singleimg" data-aos="zoom-in">
                     <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
                     <div class="slidercontent">
                         <small>24.04.2023</small>
-                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                        <p class="primary">İstanbul Tıp Fakültesi Hastanesi'nde
                             hastalar böyle tedavi ediliyor</p>
-                        <a href="" class="contiune">Devamını Oku  ></a>
+                        <a href="" class="contiune primary">Devamını Oku  ></a>
                     </div>
                 </div>
-                <div class="double">
-                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
+                <div class="double" data-aos="zoom-in">
+                    <div class="card1" data-aos="zoom-in"><img
+                            src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
                         <div class="slidercontent2">
                             <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                            <p class="primary">İstanbul Tıp Fakültesi Hastanesi'nde
                                 hastalar böyle tedavi ediliyor</p>
 
                         </div>
                     </div>
-                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
-                            alt="">
+                    <div class="card2" data-aos="zoom-in"><img
+                            src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png" alt="">
                         <div class="slidercontent2">
                             <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
+                            <p class="primary">İstanbul Tıp Fakültesi Hastanesi'nde
                                 hastalar böyle tedavi ediliyor</p>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="singleimg">
-                    <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
-                    <div class="slidercontent">
-                        <small>24.04.2023</small>
-                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                            hastalar böyle tedavi ediliyor</p>
-                        <a href="" class="contiune">Devamını Oku  ></a>
-                    </div>
-                </div>
-                <div class="double">
-                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
-                        <div class="slidercontent2">
-                            <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                                hastalar böyle tedavi ediliyor</p>
 
-                        </div>
-                    </div>
-                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
-                            alt="">
-                        <div class="slidercontent2">
-                            <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                                hastalar böyle tedavi ediliyor</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="singleimg">
-                    <img class="single" src="images/20200414_2_41891326_53925808_Web.png" alt="">
-                    <div class="slidercontent">
-                        <small>24.04.2023</small>
-                        <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                            hastalar böyle tedavi ediliyor</p>
-                        <a href="" class="contiune">Devamını Oku  ></a>
-                    </div>
-                </div>
-                <div class="double">
-                    <div class="card1"><img src="images/140363246_3400369223422943_4199794505143118662_n.png" alt="">
-                        <div class="slidercontent2">
-                            <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                                hastalar böyle tedavi ediliyor</p>
-
-                        </div>
-                    </div>
-                    <div class="card2"><img src="images/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
-                            alt="">
-                        <div class="slidercontent2">
-                            <small>24.04.2023</small>
-                            <p class="text-primary">İstanbul Tıp Fakültesi Hastanesi'nde
-                                hastalar böyle tedavi ediliyor</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <article class="answers">
@@ -311,7 +262,7 @@
         </div>
         <div class="container">
             <div class="answerflex row">
-                <div class="paragraf col-md-4">
+                <div class="paragraf col-md-4" data-aos="fade-up">
 
                     <div>
                         <h1>Dr.Mustafa Oral Öncül'e <br> Sorun Yanırlasın</h1>
@@ -326,31 +277,31 @@
                     </div>
                 </div>
                 <div class="col-md-4 space"></div>
-                <div class="flag col-md-4"><img src="images/pngegg (2).png" alt=""></div>
+                <div class="flag col-md-4" data-aos="fade-up"><img src="images/pngegg (2).png" alt=""></div>
             </div>
         </div>
     </article>
     <section class="calismaalan">
-        <div class="container">
-            <h1>Çalışma Alanları</h1>
+        <div class="container working-area">
+            <h1 class="galleryheader">Çalışma Alanları</h1>
             <div class="row mobilerow">
-                <div class="col-3">
+                <div class="col-3 resizecol" data-aos="fade-right">
                     <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
                         <p>Lorem Ipsum</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 resizecol" data-aos="fade-right">
                     <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
                         <p>Lorem Ipsum</p>
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="col-3">
+                <div class="col-3 resizecol" data-aos="fade-left">
                     <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
                         <p>Lorem Ipsum</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 resizecol" data-aos="fade-left">
                     <div class="cardimg"> <img src="images/waterfall-landscape.png" alt="">
                         <p>Lorem Ipsum</p>
                     </div>
@@ -361,20 +312,24 @@
     <article class="quotes"> <img src="images/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png"
             class="backimg" alt="">
         <div class=" filter3">
-            <p class="header2">
-                <i class="fa-solid fa-quote-left quote"></i>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
-                basın yayın sektöründe kullanılan taklit yazı bloğu
-                olarak tanımlanır.<i class="fa-solid fa-quote-right quote"></i>
-            </p>
+            <div class="try" data-aos="zoom-in" data-aos-easing="ease-in-out">
+                <div class="quote-left"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="header2">
+                    Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                    basın yayın sektöründe kullanılan taklit yazı bloğu
+                    olarak tanımlanır.
+                </p>
+                <div class="quote-right"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
         </div>
     </article>
     <section class="information">
-        <div class="container">
+        <div class="container normal">
             <div class=" header">
-                <h1>Yararlı Bilgiler</h1>
+                <h1 class="useful-information">Yararlı Bilgiler</h1>
             </div>
             <div class="triplebox">
-                <div class="box">
+                <div class="box" data-aos="zoom-in">
                     <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
                             alt=""></div>
                     <div class="boxcontent">
@@ -391,15 +346,16 @@
                     </div>
                 </div>
                 <div class="boxes">
-                    <div class="box1 boxdob">
-                        <div class="boximage"><img
-                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png" alt=""></div>
+                    <div class="box1 boxdob" data-aos="zoom-in">
+                        <div class="boximage side"><img
+                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png"
+                                alt=""></div>
                         <div class="boxcontent">
                             <div class="date">
                                 <p class="text-muted">24.04.2023</p>
                             </div>
                             <div>
-                                <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                                <h4>Lorem Ipsum Yararlı Bilgiler Başlık</h4>
                             </div>
                             <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
                                 basın yayın sektöründe kullanılan taklit yazı bloğu
@@ -407,15 +363,16 @@
                             <div> <button class="detail2">Detaylı Bilgi</button> </div>
                         </div>
                     </div>
-                    <div class="box2 boxdob">
-                        <div class="boximage"><img
-                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png" alt=""></div>
+                    <div class="box2 boxdob" data-aos="zoom-in">
+                        <div class="boximage side"><img
+                                src="images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png"
+                                alt=""></div>
                         <div class="boxcontent">
                             <div class="date">
                                 <p class="text-muted">24.04.2023</p>
                             </div>
                             <div>
-                                <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                                <h4>Lorem Ipsum Yararlı Bilgiler Başlık</h4>
                             </div>
                             <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
                                 basın yayın sektöründe kullanılan taklit yazı bloğu
@@ -428,7 +385,7 @@
         </div>
         <div class="res container">
             <div class="slider resslide">
-                <div class="box">
+                <div class="box slibox">
                     <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
                             alt=""></div>
                     <div class="boxcontent">
@@ -443,7 +400,24 @@
                             olarak tanımlanır.</div>
                         <div> <button class="detail2">Detaylı Bilgi</button> </div>
                     </div>
-                </div> <div class="box slibox">
+                </div>
+                <div class="box slibox">
+                    <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
+                            alt=""></div>
+                    <div class="boxcontent">
+                        <div class="date">
+                            <p class="text-muted">24.04.2023</p>
+                        </div>
+                        <div>
+                            <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                        </div>
+                        <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                            basın yayın sektöründe kullanılan taklit yazı bloğu
+                            olarak tanımlanır.</div>
+                        <div> <button class="detail2">Detaylı Bilgi</button> </div>
+                    </div>
+                </div>
+                <div class="box slibox">
                     <div class="boximage"><img src="images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
                             alt=""></div>
                     <div class="boxcontent">
@@ -462,11 +436,255 @@
             </div>
         </div>
     </section>
+    <article class="autumslider">
+        <div class="background">
+            <img src="images/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png" alt="">
+        </div>
+
+        <div class="container-fluid">
+            <h1 class="text-light activeties">Aktiviteler</h1>
+
+            <div class="centerslide">
+                <div class="centeritem">
+                    <img src="images/speaker-giving-talk-scientific-conference-audience-conference-hall-business-entrepreneurship-concept.png"
+                        alt="">
+                    <div class="centercontent">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="date">
+                                    <p class="text-muted">24.04.2023</p>
+                                </div>
+                                <div>
+                                    <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                                </div>
+
+                                <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                                    basın yayın sektöründe kullanılan taklit yazı bloğu
+                                    olarak tanımlanır.</div>
+                            </div>
+                            <div class="anglelink col-2"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centeritem">
+                    <img src="images/speaker-giving-talk-scientific-conference-audience-conference-hall-business-entrepreneurship-concept.png"
+                        alt="">
+                    <div class="centercontent">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="date">
+                                    <p class="text-muted">24.04.2023</p>
+                                </div>
+                                <div>
+                                    <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                                </div>
+
+                                <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                                    basın yayın sektöründe kullanılan taklit yazı bloğu
+                                    olarak tanımlanır.</div>
+                            </div>
+                            <div class="anglelink col-2"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centeritem">
+                    <img src="images/speaker-giving-talk-scientific-conference-audience-conference-hall-business-entrepreneurship-concept.png"
+                        alt="">
+                    <div class="centercontent">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="date">
+                                    <p class="text-muted">24.04.2023</p>
+                                </div>
+                                <div>
+                                    <h3>Lorem Ipsum Yararlı Bilgiler Başlık</h3>
+                                </div>
+
+                                <div class="text-muted">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+                                    basın yayın sektöründe kullanılan taklit yazı bloğu
+                                    olarak tanımlanır.</div>
+                            </div>
+                            <div class="anglelink col-2"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+    <section class="fancy-gallery">
+        <div class="container">
+            <h1 class="galleryheader">Video Galeri</h1>
+            <div class="row">
+                <video id="myvideo" class="mb-4 col-8  img-fluid vadervideo bigvideo"
+                    src="video/Obi-Wan Kenobi 2022 Final Scene - You didn't kill Anakin Skywalker, I did....mp4"
+                    style="max-height: 282px;"></video>
+                <video id="myvideo2" class="mb-4 col-4  img-fluid vadervideo"
+                    src="video/Obi-Wan Kenobi 2022 Final Scene - You didn't kill Anakin Skywalker, I did....mp4"
+                    width="952px" height="282px" style="max-height: 282px;"></video>
+
+            </div>
+            <div class="row">
+
+                <video id="myvideo3" class="mb-4 col-4  img-fluid vadervideo"
+                    src="video/Obi-Wan Kenobi 2022 Final Scene - You didn't kill Anakin Skywalker, I did....mp4"
+                    width="952px" height="282" style="max-height: 282px;"></video>
+                <video id="myvideo4" class="mb-4 col-4  img-fluid vadervideo"
+                    src="video/Obi-Wan Kenobi 2022 Final Scene - You didn't kill Anakin Skywalker, I did....mp4"
+                    width="952px" height="282" style="max-height: 282px;"></video><video id="myvideo5"
+                    class="mb-4 col-4  img-fluid vadervideo"
+                    src="video/Obi-Wan Kenobi 2022 Final Scene - You didn't kill Anakin Skywalker, I did....mp4"
+                    width="952px" height="282" style="max-height: 282px;"></video>
+            </div>
+        </div>
+
+    </section>
+    <section class="member mt-5">
+        <h1 class="galleryheader">Üye Olduğu Kuruluşlar</h1>
+        <div class="slider autoplay">
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+            <div class="members">
+                <p>Lorem Ipsum Kuruluş</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 aciklama">
+                    <h1 class="baslik">Dr. Mustafa Oral Öncül</h1>
+                    <p>Lorem Ipsum, kısaca Lipsum, masaüstü
+                        yayıncılık ve basın yayın sektöründe kullanılan
+                        taklit yazı bloğu olarak tanımlanır. Lipsum,
+                        oluşturulacak şablon ve taslaklarda içerik
+                        yerine geçerek yazı bloğunu doldurmak
+                        için kullanılır.</p>
+                    <div class="icons">
+                        <a href="" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-4 pages">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2 class="baslik">Sayfalar</h2>
+                            <div class="underline"></div>
+                            <ul>
+                                <li><a href="#" class="text-dark">Anasayfa</a></li>
+                                <li><a href="#" class="text-dark">Hakkımda</a></li>
+                                <li><a href="#" class="text-dark">Faaliyetler</a></li>
+                                <li><a href="#" class="text-dark">Video Galeri</a></li>
+                                <li><a href="#" class="text-dark">Basından Haberler</a></li>
+                                <li><a href="#" class="text-dark">Soru Cevap</a></li>
+                                <li><a href="#" class="text-dark">İletişim</a></li>
+                            </ul>
+                            <div class="clearfoot"></div>
+                            <h2 class="baslik">Sayfalar</h2>
+                            <div class="underline"></div>
+
+                            <ul>
+                                <li><a href="#" class="text-dark">Anasayfa</a></li>
+                                <li><a href="#" class="text-dark">Hakkımda</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="baslik">Sayfalar</h2>
+                            <div class="underline"></div>
+
+                            <ul>
+                                <li><a href="#" class="text-dark">Anasayfa</a></li>
+                                <li><a href="#" class="text-dark">Hakkımda</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4 contact">
+                    <h2 class="baslik">Bize Ulaşın</h2>
+                    <div class="underline"></div>
+
+                    <ul>
+                        <li>
+                            <a href="tel:90 226 5422020/3653" class="text-dark"><i class="fa-solid fa-phone"></i> +90 226 5422020/3653</a>
+                        </li>
+                        <li>
+                            <a href="tel:90 212 347 21 14" class="text-dark"><i class="fa-solid fa-phone-office"></i> +90 212 347 21 14</a>
+                        </li>
+                        <li>
+                            <a href="mailto:oraloncul@istanbul.edu.tr" class="text-dark"><i class="fa-solid fa-envelope"></i>
+                                oraloncul@istanbul.edu.tr</a>
+                        </li>
+                        <li class="loc">
+                            <a href="https://goo.gl/maps/xcTMW63MNVn2ncXR6" target="_blank" class="text-dark"><i class="fa-solid fa-location-dot"></i> İstanbul Üniversitesi
+                                Istanbul Tıp
+                                Fakültesi
+                                Profesör İnfeksiyon Hastalıkları ve Klinik
+                                Mikrobiyoloji ABD Çapa, Istanbul, Turkey</a>
+                        </li>
+                        <li class="loc">
+                            <a href="https://goo.gl/maps/w8DmBKDMbWFvY9sf7" target="_blank" class="text-dark"> <i class="fa-solid fa-location-dot"></i> Goztepe Mah. Tutuncu
+                                Mehmet Efendi Cad.
+                                Ihlamur Sok. Akan 2 Apt. No:18 Daire:38, 34600
+                                Kadıkoy - İstanbul, Turkey</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h5>Tüm Hakları Saklıdır @2023</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 
 
