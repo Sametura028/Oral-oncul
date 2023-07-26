@@ -78,6 +78,7 @@ $('.autoplay').slick({
   infinite: true,
   swipe: false,
   cssEase: 'linear',
+  variableWidth: true,
   // pauseOnHover: true,
   dots: false,
   arrows: false,
@@ -92,7 +93,7 @@ $('.autoplay').slick({
   {
     breakpoint: 576,
     settings: {
-      slidesToShow: 4,
+      slidesToShow: 2,
       slidesToScroll: 1
 
     }
@@ -100,12 +101,28 @@ $('.autoplay').slick({
   {
     breakpoint: 480,
     settings: {
-      slidesToShow: 3,
+      slidesToShow:1,
       slidesToScroll: 1
 
     }
   }]
 });
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
 $('.autoplay').on('mouseenter', function (e) {
   console.log('stop autoplay');
   mySwiper.stopAutoplay();
